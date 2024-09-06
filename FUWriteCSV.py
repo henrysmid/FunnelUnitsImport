@@ -1,9 +1,9 @@
 # Import CSV files into Salesforce propagation row based the data into FUCSVQueue__c
+# Planned enhancement: check Object Name before importing
 # Author: Henry Smid
 # Last Update: September 2024
 import json
-import time
-from datetime import datetime
+import time from datetime import datetime
 
 from salesforce_bulk import SalesforceBulk
 from simple_salesforce import Salesforce
