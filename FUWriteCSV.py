@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 # Import CSV files into Salesforce propagation row based the data into FUCSVQueue__c
+# Enhancement verification before import
 # Author: Henry Smid
 # Last Update: September 2024
 
