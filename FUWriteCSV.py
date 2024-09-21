@@ -108,6 +108,9 @@ def post_to_salesforce(file_name, name):
     username = ''
     password = ''
     security_token = ''
+    username = 'henrysmid@googlemail.com'
+    password = 'Norwegen!1968'
+    security_token = '0jJOEq4A83TvIW9FkGalPZCO'
     sandbox = False
     ts = get_current_timestamp()
     print(f"{ts} - create connection")
@@ -137,7 +140,7 @@ def post_to_salesforce(file_name, name):
         ts = get_current_timestamp()
         print(f"{ts} -  job {job} created.")
 
-        with open(file_name, 'r', encoding='latin-1') as file:
+        with open(file_name, mode = 'r', encoding='utf-8-sig') as file:
             # Iterate over each line in the file
             for line in file:
                 i += 1
@@ -181,8 +184,8 @@ def post_to_salesforce(file_name, name):
 
 # ========================================================================================
 
-file_path = 'C:\\Users\\henry\\Dropbox\\IT\\Funnel Units\\Test\\Data\\Acrolinx\\'
-file_path_accounts = file_path + 'Accounts 02-2024.csv'
+file_path = 'C:\\Users\\henry\\Dropbox\\IT\\Funnel Units\\Test\\Data\\Acrolinx\\2024-09\\'
+file_path_accounts = file_path + 'Accounts_10 2024-09.csv'
 file_path_opps = file_path + 'Opportunities_10_Opp.csv'
 file_path_history = file_path + 'OpportunityHistorie_10_Opp_Neu.csv'
 
