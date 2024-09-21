@@ -108,9 +108,6 @@ def post_to_salesforce(file_name, name):
     username = ''
     password = ''
     security_token = ''
-    username = 'henrysmid@googlemail.com'
-    password = 'Norwegen!1968'
-    security_token = '0jJOEq4A83TvIW9FkGalPZCO'
     sandbox = False
     ts = get_current_timestamp()
     print(f"{ts} - create connection")
