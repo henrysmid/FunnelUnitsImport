@@ -181,14 +181,16 @@ def post_to_salesforce(file_name, name):
 
 # ========================================================================================
 
-file_path = 'C:\\Users\\henry\\Dropbox\\IT\\Funnel Units\\Test\\Data\\Acrolinx\\2024-09\\'
+file_path = 'C:\\Users\\henry\\Dropbox\\IT\\Funnel Units\\Test\\Data\\Acrolinx\\2024-09\\csv\\'
 file_path_accounts = file_path + 'Accounts_10 2024-09.csv'
-file_path_opps = file_path + 'Opportunities_10_Opp.csv'
-file_path_history = file_path + 'OpportunityHistorie_10_Opp_Neu.csv'
+file_path_opps = file_path + 'Opportunities_10 2024-09.csv'
+file_path_history = file_path + 'OppHistory_10 2024-09.csv'
 
 name_account = 'Account'
 name_opp = 'Opportunity'
 name_history = 'OpportunityHistory'
 
 post_to_salesforce(file_path_accounts, name_account)
+post_to_salesforce(file_path_opps, name_opp)
+post_to_salesforce(file_path_history, name_history)
 
