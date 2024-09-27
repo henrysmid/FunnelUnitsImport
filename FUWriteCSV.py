@@ -105,9 +105,9 @@ def post_to_salesforce(file_name, name):
     limit = 0
 
     # Establish connection to Salesforce
-    username = ''
-    password = ''
-    security_token = ''
+    username = 'henrysmid@googlemail.com'
+    password = 'Norwegen!1968'
+    security_token = '0jJOEq4A83TvIW9FkGalPZCO'
     sandbox = False
     ts = get_current_timestamp()
     print(f"{ts} - create connection")
@@ -183,6 +183,9 @@ def post_to_salesforce(file_name, name):
 
 file_path = 'C:\\Users\\henry\\Dropbox\\IT\\Funnel Units\\Test\\Data\\Acrolinx\\2024-09\\csv\\'
 file_path_accounts = file_path + 'Accounts_10 2024-09.csv'
+#file_path_opps = file_path + 'Opportunities_3Accounts 2024-09.csv'
+#file_path_history = file_path + 'OppHistory_3Accounts 2024-09.csv'
+
 file_path_opps = file_path + 'Opportunities_10 2024-09.csv'
 file_path_history = file_path + 'OppHistory_10 2024-09.csv'
 
